@@ -1,0 +1,5 @@
+Exceptions.CurrencyNotFoundException: Currency name USD does not exist.
+	at Main_Logic.Store.changeCurrency(Store.java:141)
+	at Commands.SetStoreCurrency.execute(SetStoreCurrency.java:22)
+	at Main_Logic.Application.executeCommands(Application.java:119)
+	at Main_Logic.Application.main(Application.java:89)

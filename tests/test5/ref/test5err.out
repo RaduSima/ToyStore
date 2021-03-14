@@ -1,0 +1,21 @@
+Exceptions.DiscountNotFoundException: Discount{name='', discountType=PERCENTAGE_DISCOUNT, value=20.0, lastDateApplied=null} not found.
+	at Main_Logic.Store.applyDiscount(Store.java:588)
+	at Commands.ApplyDiscount.execute(ApplyDiscount.java:25)
+	at Main_Logic.Application.executeCommands(Application.java:119)
+	at Main_Logic.Application.main(Application.java:89)
+Exceptions.NegativePriceException: Negative price after discount for product Product{uniqueId='eac7efa5dbd3d667f26eb3d3ab504464', name='Hornby 2014 Catalogue', manufacturer=Manufacturer{name='Hornby', countProducts=68}, price=14.46923076923077, quantity=5, discount=Discount{name='"50% Christmas Miracle"', discountType=PERCENTAGE_DISCOUNT, value=50.0, lastDateApplied=2021-01-21T18:18:26.052566}}
+	at Main_Logic.Product.applyDiscount(Product.java:204)
+	at Main_Logic.Store.applyDiscount(Store.java:577)
+	at Commands.ApplyDiscount.execute(ApplyDiscount.java:25)
+	at Main_Logic.Application.executeCommands(Application.java:119)
+	at Main_Logic.Application.main(Application.java:89)
+Exceptions.DiscountNotFoundException: Discount{name='', discountType=FIXED_DISCOUNT, value=1.0, lastDateApplied=null} not found.
+	at Main_Logic.Store.applyDiscount(Store.java:588)
+	at Commands.ApplyDiscount.execute(ApplyDiscount.java:29)
+	at Main_Logic.Application.executeCommands(Application.java:119)
+	at Main_Logic.Application.main(Application.java:89)
+Exceptions.CurrencyNotFoundException: Currency name USD does not exist.
+	at Main_Logic.Store.changeCurrency(Store.java:141)
+	at Commands.SetStoreCurrency.execute(SetStoreCurrency.java:22)
+	at Main_Logic.Application.executeCommands(Application.java:119)
+	at Main_Logic.Application.main(Application.java:89)

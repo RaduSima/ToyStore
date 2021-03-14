@@ -1,0 +1,17 @@
+loadcsv tests/csv_input/amazon_co-ecommerce_sample.csv
+getstorecurrency
+listmanufacturers
+savestore tests/test2/out/store_binary
+adddiscount PERCENTAGE 50 "50% MEGA SALE"
+applydiscount PERCENTAGE 50
+setstorecurrency USD
+addcurrency USD $ 1.22
+setstorecurrency USD
+listproducts
+loadstore tests/test2/out/store_binary
+listproducts
+updateparity USD 2
+setstorecurrency EUR
+showproduct eac7efa5dbd3d667f26eb3d3ab504464
+calculatetotal eac7efa5dbd3d667f26eb3d3ab504464 e12b92dbb8eaee78b22965d2a9bbbd9f
+quit

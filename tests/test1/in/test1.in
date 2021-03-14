@@ -1,0 +1,10 @@
+addcurrency GBP £ 1.10
+setstorecurrency GBP
+loadcsv tests/csv_input/amazon_co-ecommerce_sample.csv
+adddiscount PERCENTAGE 30 "30% Black Friday"
+applydiscount PERCENTAGE 30
+listmanufacturers
+listproducts
+calculatetotal eac7efa5dbd3d667f26eb3d3ab504464 93a2c5173f17b896dc614ffbac0c2f2c
+savecsv tests/test1/out/test1.csv
+quit

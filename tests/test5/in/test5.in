@@ -1,0 +1,49 @@
+loadcsv tests/csv_input/amazon_co-ecommerce_sample.csv
+calculatetotal lg24tn5105 b17540ef7e86e461d37f3ae58b7b72ac b17540ef7e86e461d37f3ae58b7b72ac eac7efa5dbd3d667f26eb3d3ab504464
+listdiscounts
+adddiscount PERCENTAGE 50 "50% Christmas Miracle"
+applydiscount PERCENTAGE 20
+listdiscounts
+adddiscount FIXED 10 "-10 For Every One"
+applydiscount PERCENTAGE 50
+listproducts
+listmanufacturers
+calculatetotal eac7efa5dbd3d667f26eb3d3ab504464 b17540ef7e86e461d37f3ae58b7b72ac 348f344247b0c1a935b1223072ef9d8a
+getstorecurrency
+savecsv tests/test5/out/test50_1.csv
+showproduct 95534049f7431eea318a6018bc1eff3f
+listproductsbymanufacturer Angry Birds
+setstorecurrency GBP
+addcurrency GBP £ 1.10
+setstorecurrency GBP
+savecsv tests/test5/out/test50_2.csv
+listproducts
+savestore tests/test5/out/test50
+showproduct 8aa01bfb947d2aa80e65bc2dc34ec3da
+showproduct lg24tn5105
+loadstore tests/test5/out/test50
+listdiscounts
+addcurrency CNY ¥ 0.13
+setstorecurrency CNY
+listproducts
+adddiscount PERCENTAGE 120 "Insane Discount"
+applydiscount PERCENTAGE 120
+listdiscounts
+applydiscount FIXED 1
+listmanufacturers
+calculatetotal c1976e03a3a8f7acca6b75e0668a9ea7 95534049f7431eea318a6018bc1eff3f 2c75d86e52018a1e283ff53bb0fe8377 2c75d86e52018a1e283ff53bb0fe8377 92becb38c3d83e23c04eccb73157498d
+getstorecurrency
+setstorecurrency EUR
+getstorecurrency
+listproducts
+listproductsbymanufacturer CATO
+calculatetotal 2c75d86e52018a1e283ff53bb0fe8377 2c75d86e52018a1e283ff53bb0fe8377 92becb38c3d83e23c04eccb73157498d
+listproducts
+listmanufacturers
+setstorecurrency USD
+addcurrency USD $ 0.82
+setstorecurrency USD
+adddiscount FIXED 0.001 "Just ignore this sale"
+applydiscount FIXED 0.001
+listproducts
+exit

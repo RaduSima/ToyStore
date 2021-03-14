@@ -1,0 +1,27 @@
+loadcsv tests/csv_input/amazon_co-ecommerce_sample.csv
+adddiscount PERCENTAGE 50 "BIGGEST SALE 2021"
+applydiscount PERCENTAGE 50
+applydiscount FIXED 30
+adddiscount FIXED 1 "-1$ new promo"
+adddiscount FIXED 0.0001 "-0.0001$ newer promo"
+adddiscount PERCENTAGE 10 "-10% promooo bby"
+adddiscount PERCENTAGE 20 "-20% biiig new promo"
+adddiscount PERCENTAGE 30 "-30% biggest new promo"
+applydiscount FIXED 1
+applydiscount FIXED 0.0001
+applydiscount PERCENTAGE 10
+applydiscount PERCENTAGE 20
+applydiscount PERCENTAGE 30
+listdiscounts
+listmanufacturers
+listproductsbymanufacturer CATO
+setstorecurrency GBP
+listproducts
+calculatetotal 2c75d86e52018a1e283ff53bb0fe8377 2c75d86e52018a1e283ff53bb0fe8377 92becb38c3d83e23c04eccb73157498d
+savecsv tests/test3/out/test3.csv
+savestore tests/test3/out/binary_store
+setstorecurrency EUR
+loadstore tests/test3/out/binary_store
+listcurrencies
+getstorecurrency
+quit

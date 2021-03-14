@@ -1,0 +1,11 @@
+Exceptions.DiscountNotFoundException: Discount{name='', discountType=FIXED_DISCOUNT, value=30.0, lastDateApplied=null} not found.
+	at Main_Logic.Store.applyDiscount(Store.java:588)
+	at Commands.ApplyDiscount.execute(ApplyDiscount.java:29)
+	at Main_Logic.Application.executeCommands(Application.java:119)
+	at Main_Logic.Application.main(Application.java:89)
+Exceptions.NegativePriceException: Negative price after discount for product Product{uniqueId='5db9347343582f2f3d9d046c9b64282c', name='Thank You Teacher Me to You Bear Cards', manufacturer=Manufacturer{name='Me To You', countProducts=17}, price=0.4675, quantity=0, discount=Discount{name='"BIGGEST SALE 2021"', discountType=PERCENTAGE_DISCOUNT, value=50.0, lastDateApplied=2021-01-21T18:08:13.728067}}
+	at Main_Logic.Product.applyDiscount(Product.java:204)
+	at Main_Logic.Store.applyDiscount(Store.java:577)
+	at Commands.ApplyDiscount.execute(ApplyDiscount.java:29)
+	at Main_Logic.Application.executeCommands(Application.java:119)
+	at Main_Logic.Application.main(Application.java:89)

@@ -1,0 +1,20 @@
+Sima Radu
+321 CB
+
+- README -
+
+		Pentru rulare: primul lucru pe care il face programul este sa verifice
+	numarul de argumenete catre main. Daca acestea exista, se presupune ca
+	ele sunt, in aceasta ordine: calea catre fisierul de intrare (cu comenzi),
+	calea catre fisierul standard de iesire si calea catre fisierul pentru
+	erori. Acestea vor fi folosite pentru input si output. Daca programul nu
+	primeste niciun argument, atunci toata rularea programului se va face de
+	la terminal. De asemenea, am facut un makefile pentru compilare si rulare
+	fara argumente catre main (deci comenzile vor fi date prin intermediul
+	terminalului standard si tot acolo vor fi afisate outputul si erorile).
+		Partea bonus a temei este complet implementata:
+		-am folosit colectii in loc de vectori;
+		-am implementat design pattern-ul "Command", pentru parsarea si
+		executarea comenzilor de la terminal;
+		-am implementat cele doua comenzi bonus, loadstore si savestore.
+	
